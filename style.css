@@ -27,6 +27,26 @@
 	font-family: 'Reem Kufi', sans-serif;
 }
 
+#hero {
+	flex-grow: 1;
+}
+
+#illustration {  
+	max-width: 320px;
+}
+
+.foot {
+	background-color: #334B49;
+	color: #DCE8E3;
+}
+
+.foot a {
+	color: #DCE8E3;
+}
+
+.contact {
+	line-height: 10%;
+}
 
 /*Media query to toggle hamburger menu on small screen and regular link list on bigger screens*/
 @media screen and (max-width: 600px) {
@@ -43,7 +63,7 @@
 	min-width: inherit;
 	margin-right: 16px;
 	padding: 16px;
-	background-color: transparent;
+	background-color: white;
 	border: none;
 	font-size: 1.5em;
 	font-family: 'Reem Kufi', sans-serif;
