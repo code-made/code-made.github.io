@@ -1,15 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Reenie+Beanie&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Reenie+Beanie&display=swap');*/
 
 #code {
 	font-family: 'Reem Kufi', sans-serif;
 }
 
-#made {
+/*Won't need this since logo is now a png*/
+/*#made {
 	font-family: 'Reenie Beanie', cursive;
-}
+}*/
 
-#banner {
+.wrap {
+	width: 100vw;
 	height: 100vh;
 	background-color: #F4EDDE;
+}
+
+#logo {
+	width: 8em;
+}
+
+#nav-links h4 {
+
+}
+
+#toggled-nav-links {
+	display: none;
+}
+
+
+/*Media query to toggle hamburger menu on small screen and regular link list on bigger screens*/
+@media screen and (max-width: 600px) {
+	#nav-links h4 {
+		display: none;
+	}
+	#toggled-nav-links {
+		display: inline-block;
+		font-size: 2em;
+	}
+	#toggled-nav-links a {
+		font-family: 'Reem Kufi', sans-serif;
+	}
+	.dropdown-toggle:after { content: none; }
+	.dropdown-menu {
+		min-width: inherit;
+		padding: 8px;
+	}
+  }
 }
